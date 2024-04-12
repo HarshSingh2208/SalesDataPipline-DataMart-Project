@@ -20,57 +20,57 @@ The code has been meticulously crafted with careful consideration for various as
 - Understanding of Spark, SQL, and Python is required.
 
 ## Project Structure:
-my_project/
-├── docs/
-│   └── readme.md
-├── resources/
-│   ├── init.py
-│   ├── dev/
-│   │   ├── config.py
-│   │   └── requirement.txt
-│   ├── qa/
-│   │   ├── config.py
-│   │   └── requirement.txt
-│   ├── prod/
-│   │   ├── config.py
-│   │   └── requirement.txt
-│   └── sql_scripts/
-│       └── table_scripts.sql
-└── src/
-    ├── main/
-    │   ├── init.py
-    │   ├── delete/
-    │   │   ├── aws_delete.py
-    │   │   ├── database_delete.py
-    │   │   └── local_file_delete.py
-    │   ├── download/
-    │   │   └── aws_file_download.py
-    │   ├── move/
-    │   │   └── move_files.py
-    │   ├── read/
-    │   │   ├── aws_read.py
-    │   │   └── database_read.py
-    │   ├── transformations/
-    │   │   └── jobs/
-    │   │       ├── customer_mart_sql_transform_write.py
-    │   │       ├── dimension_tables_join.py
-    │   │       ├── main.py
-    │   │       └── sales_team_mart_sql_transformation_write.py
-    │   ├── upload/
-    │   │   └── upload_to_s3.py
-    │   └── utility/
-    │       ├── encrypt_decrypt.py
-    │       ├── logging_config.py
-    │       ├── s3_client_object.py
-    │       ├── spark_session.py
-    │       └── my_sql_session.py
-    └── test/
-        ├── scratch_pad.py.py
-        ├── generate_csv_data.py
-        ├── extra_column_csv_generated_data.py
-        ├── generate_customer_table_data.py
-        ├── generate_datewise_sales_data.py
-        ├── less_column_csv_generated_data.py
-        ├── mysql_table_to_dataframe.py
-        └── sales_data_upload_s3.py
+          my_project
+           ├── docs
+           │   └── readme.md
+           ├── resources
+           │   ├── init.py
+           │   ├── dev
+           │   │   ├── config.py
+           │   │   └── requirement.txt
+           │   ├── qa
+           │   │   ├── config.py
+           │   │   └── requirement.txt
+           │   ├── prod
+           │   │   ├── config.py
+           │   │   └── requirement.txt
+           │   └── sql_scripts
+           │       └── table_scripts.sql
+           └── src
+               ├── main
+               │   ├── init.py
+               │   ├── delete
+               │   │   ├── aws_delete.py
+               │   │   ├── database_delete.py
+               │   │   └── local_file_delete.py
+               │   ├── download
+               │   │   └── aws_file_download.py
+               │   ├── move
+               │   │   └── move_files.py
+               │   ├── read
+               │   │   ├── aws_read.py
+               │   │   └── database_read.py
+               │   ├── transformations
+               │   │   └── jobs
+               │   │       ├── customer_mart_sql_transform_write.py
+               │   │       ├── dimension_tables_join.py
+               │   │       ├── main.py
+               │   │       └── sales_team_mart_sql_transformation_write.py
+               │   ├── upload
+               │   │   └── upload_to_s3.py
+               │   └── utility
+               │       ├── encrypt_decrypt.py
+               │       ├── logging_config.py
+               │       ├── s3_client_object.py
+               │       ├── spark_session.py
+               │       └── my_sql_session.py
+               └── test
+                   ├── scratch_pad.py.py
+                   ├── generate_csv_data.py
+                   ├── extra_column_csv_generated_data.py
+                   ├── generate_customer_table_data.py
+                   ├── generate_datewise_sales_data.py
+                   ├── less_column_csv_generated_data.py
+                   ├── mysql_table_to_dataframe.py
+                   └── sales_data_upload_s3.py
 
