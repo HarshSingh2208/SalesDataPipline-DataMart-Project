@@ -24,7 +24,7 @@ my_project/
 ├── docs/
 │   └── readme.md
 ├── resources/
-│   ├── __init__.py
+│   ├── init.py
 │   ├── dev/
 │   │   ├── config.py
 │   │   └── requirement.txt
@@ -38,7 +38,7 @@ my_project/
 │       └── table_scripts.sql
 └── src/
     ├── main/
-    │   ├── __init__.py
+    │   ├── init.py
     │   ├── delete/
     │   │   ├── aws_delete.py
     │   │   ├── database_delete.py
