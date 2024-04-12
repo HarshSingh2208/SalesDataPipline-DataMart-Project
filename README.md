@@ -74,3 +74,16 @@ The code has been meticulously crafted with careful consideration for various as
                    ├── mysql_table_to_dataframe.py
                    └── sales_data_upload_s3.py
 
+
+## How to run the program in PyCharm:
+
+1. Open the PyCharm editor.
+2. Upload or pull the project from GitHub.
+3. Open the terminal from the bottom pane.
+4. Go to the virtual environment and activate it. Let's say you have venv as a virtual environment.
+    - `cd venv`
+    - `cd Scripts`
+    - `activate` (if activate doesn't work then use ./activate)
+5. You will have to create a user on AWS also and assign S3 full access and provide a secret key and access key to the config file.
+6. Run main.py from the green play button on the top right-hand side.
+
