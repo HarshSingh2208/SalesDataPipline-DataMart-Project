@@ -4,7 +4,7 @@ This Data Engineering aims to provide you with insights into the functioning of 
 - Data will be pulled from upstream (Amazon S3) and then downloaded to on-premise (local) and processed using the business logic.
 - Processed data then will be written into Customer and Sales Datamart in MySQL Table in the warehouse and for the same data partitioned parquet will be generated and uploaded to Amazon S3.
 - Downstream and reporting team can access datamart tables and can also use parquet files provided on the Amazon S3 bucket for analysis.
-- This project aims to replicate the production environment so includes features like audit-table, archiving of processed data, schema validation of the files, handling extra and less column, detecting the wrong format file, logging, etc.
+- This project aims to replicate the production environment so includes features like audit-table, archiving of processed data, schema validation of the files, handling extra and less column, detecting the wrong format file, logging,encryting and decrypting access and secret etc.
 - Business logic like customer total sales by month, giving incentive to top salesman, etc.
 
 The code has been meticulously crafted with careful consideration for various aspects. It not only nurtures your coding skills but also imparts a comprehensive comprehension of project structures.
