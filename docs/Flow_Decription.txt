@@ -1,0 +1,23 @@
+Simple Breakdown of the project:-
+1.  Upstream Data on Amazon S3
+2.  Create an S3_client and connect to Amazon s3 using secret and access_key.
+3.  Pull data On-Premise(Locally)
+4.  Make Audit entry for the run in Audit Table
+    --> If last run status='A' -> "Last process was failed/unsuccessful"
+    --> If last run status='I' -> "Last process was successful"
+5.  Filter the files based on file format
+    --> If file format correct, then proceed
+    --> Else raise exception and exit
+6.  Make an audit enrty for current run in audit table with staus='A' and created_time.
+7.  Create a Spark Session
+8.  For Correct format file do Schema validation to check and filter out schema compatible files
+    --> If less column or non matching column move file to error directory
+    --> For correct and extra column files(apply logic to handle extra column) proceed further
+9.  Add data of these file to Spark Fact Dataframe.
+10. Pull Data of 4 dimension tables from the mysql_db.
+11. Join these 4 dimesnion tables with Upstream data df(Fact Table) to create an Enriched df.
+12. Make customer_df and sales_df as per requirement and apply Spark transformation to apply Buisness logic.
+13. After generating the required df pushed the data to customer and sales datamart for reporting by other teams.
+14. Generate the parquet files and pushed to Amazon S3 for future analysis by downstream team.
+15. Moved the loaded files to the archive/proccessed folder in Amazon S3 source location and delete file locally.
+16. Make successful audit entry for the current run with status='I' and updated_time.
