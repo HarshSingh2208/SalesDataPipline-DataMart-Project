@@ -74,4 +74,3 @@ my_project/
         ├── mysql_table_to_dataframe.py
         └── sales_data_upload_s3.py
 
-
