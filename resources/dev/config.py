@@ -5,8 +5,8 @@ iv = "youtube_encyptyo"
 salt = "youtube_AesEncryption"
 
 #AWS Access And Secret key
-aws_access_key = "NQ6R+Zr9LpK+y8bg6eUqdEVErvXzsNzz3jRKMuQjfjQ="
-aws_secret_key = "Ty2LWx/2Gh0RLnYEjZ9PJcebbPu/qQe61tsNI/AY7EZwqaeK6CFjROcEzRq6o+WK"
+aws_access_key = "your aws access_key"
+aws_secret_key = "your aws secret_key"
 bucket_name = "de-project-harsh"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
