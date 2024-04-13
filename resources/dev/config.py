@@ -1,8 +1,8 @@
 import os
 
-key = "youtube_project"
-iv = "youtube_encyptyo"
-salt = "youtube_AesEncryption"
+key = "sales_data_project"
+iv = "sales_data_encyptyo"
+salt = "sales_data_AesEncryption"
 
 #AWS Access And Secret key
 aws_access_key = "your aws access_key"
@@ -18,7 +18,7 @@ s3_partitioned_data_mart='sales_partitioned_data_mart/'
 
 #Database credential
 # MySQL database connection properties
-database_name = "youtube_project"
+database_name = "your_db_name"
 url = f"jdbc:mysql://localhost:3306/{database_name}"
 
 properties = {
